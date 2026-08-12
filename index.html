@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Task Manager</h1>
+        <p>Organize your daily tasks easily 📚</p>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        <div class="task-stats">
+            <span>Total: <b id="totalTasks">0</b></span>
+            <span>Completed: <b id="completedTasks">0</b></span>
+            <span>Pending: <b id="pendingTasks">0</b></span>
+        </div>
+
+        <ul id="taskList"></ul>
+
+        <button class="clear-btn" onclick="clearAllTasks()">
+            Clear All Tasks
+        </button>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
